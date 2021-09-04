@@ -1,0 +1,13 @@
+<!-- <ul>
+<app-todo-list-item *ngFor="let todo of todoos"
+ [todoText]=todo
+  (todoClick)="deleteTodo($event)"
+  >
+</app-todo-list-item>
+</ul> -->
+<app-todo-form></app-todo-form>
+<ul>
+    <app-todo-list-item *ngFor="let todo of todoos"
+     [todo]=todo >
+    </app-todo-list-item>
+    </ul>
